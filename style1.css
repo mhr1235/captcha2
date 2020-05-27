@@ -23,7 +23,8 @@ p{font-size:20px;line-height:19.2px;color:#fff;font-family: Arial, Helvetica, sa
 
  }
 .captcha-image.active:before{
-  content: '✔\fe0e';     
+  content: "\f00c";
+  font-family: FontAwesome;
   position: absolute;
   width: 10px; height: 10px;
   transform: translate(-50%,-50%);
