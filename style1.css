@@ -22,7 +22,7 @@ p{font-size:20px;line-height:19.2px;color:#fff;font-family: Arial, Helvetica, sa
 .captcha-image.active{border:6px solid #4990e2;
 
  }
-.captcha-image.active:after{
+.captcha-image.active:before{
   content: '✔';    
   position: absolute;
   width: 10px; height: 10px;
