@@ -16,9 +16,25 @@ p{font-size:20px;line-height:19.2px;color:#fff;font-family: Arial, Helvetica, sa
 	}
 	@media (max-width: 767px){.captcha-container .header p{font-size:12px;line-break:15px;margin-left:15px}}
 .captcha-container .content{display:flex;align-items:center;flex-wrap:wrap;height:80%}
+
+
 .captcha-image{height:calc(33% - 2px);margin:2px}
-.captcha-image.active{border:6px solid #4990e2}
-.captcha-image img{display:block;margin:auto;max-width:100%}
+.captcha-image.active{border:6px solid #4990e2;
+
+ }
+.captcha-image.active:after{
+display:block;
+position: absolute;
+content: '✓';
+font-weight: 600;
+border: none;
+margin-top: -125px;
+margin-left: 0px;
+z-index: 3;
+  
+
+}
+.captcha-image img{display: block;margin:auto;max-width:100%}
 .footer{display:flex;align-items:center;justify-content:space-between;height:20%;padding:20px 25px;border-left:1px solid #d0d0d0;border-right:1px solid #d0d0d0;border-bottom:1px solid #d0d0d0}
 .footer .refresh{display:inline-block}
 .footer .refresh img{display:block;margin:auto;overflow:hidden}
